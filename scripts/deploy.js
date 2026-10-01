@@ -14,9 +14,9 @@
 
 'use strict';
 
-const { spawnSync } = require('node:child_process');
 const { mkdirSync, existsSync } = require('node:fs');
 const path = require('node:path');
+const { sync: spawnSync } = require('cross-spawn');
 
 // ---------------------------------------------------------------------------
 // Argument parsing
